@@ -3,3 +3,17 @@
     font-weight: 600;
     cursor: pointer;
 }
+
+.animate-slide {
+    animation: slide 10s linear infinite;
+}
+
+.animate-slide:hover {
+    animation-play-state: paused;
+}
+
+@keyframes slide {
+    100% {
+        transform: translateX(-100%);
+    }
+}
